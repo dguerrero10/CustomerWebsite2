@@ -25,22 +25,37 @@
 
 .page-header-section {
   text-align: center;
-  height: 325px;
+  height: 400px;
+  position: relative;
 }
 
 .center-text {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   color: white;
   letter-spacing: 1px;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .content-wrapper {
   padding-top: 55px;
+  min-height: 800px;
 }
 
 .tabs {
   margin: 15px;
+}
+
+
+@media screen and (max-width: 864px) {
+  .content-wrapper {
+    padding-top: 0;
+  }
+
+  .page-header-section {
+    text-align: center;
+    height: 300px;
+  }
 }

@@ -20,22 +20,24 @@
 
 .page-header-section {
   text-align: center;
-  height: 325px;
+  height: 400px;
+  position: relative;
 }
 
 .center-text {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   color: white;
   letter-spacing: 1px;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .calc-container {
   display: flex;
   flex-direction: column;
-  margin: 45px;
+  margin: 3%;
   padding: 25px;
 }
 
@@ -48,8 +50,46 @@
   margin-top: 10px
 }
 
+.flex-container {
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
 
+.flex-field {
+  display: inline;
+}
 
 label {
   padding-bottom: 10px;
+}
+
+.calc-btns {
+  margin: 12px 0;
+  letter-spacing: 1px;
+}
+
+#calc {
+  background: #11293e;
+  color: white;
+}
+
+#reset {
+  color: #11293e;
+}
+
+
+@media screen and (max-width: 864px) {
+  .calc-container {
+    margin: 0;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  label {
+    text-align: center;
+  }
 }

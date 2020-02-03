@@ -10,7 +10,7 @@ import { FAQ } from '../shared/faq.model';
 export class GeneralFaqComponent implements OnInit {
   loadedArticles: FAQ[];
 
-  constructor( private faqService: FaqService ) { }
+  constructor(private faqService: FaqService) {}
 
   ngOnInit() {
    this.loadedArticles = this.faqService.articles;

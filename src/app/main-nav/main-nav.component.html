@@ -3,23 +3,23 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar style="color: white;">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/home">
+      <a mat-list-item (click)="drawer.close()" routerLink="/home">
         <mat-icon class="icon">home</mat-icon>
         Home
       </a>
-      <a mat-list-item routerLink="/conservation">
+      <a mat-list-item (click)="drawer.close()" routerLink="/conservation">
         <mat-icon class="icon">public</mat-icon>
         Conservation
       </a>
-      <a mat-list-item routerLink="/education">
+      <a mat-list-item (click)="drawer.close()" routerLink="/education">
         <mat-icon class="icon">school</mat-icon>
         Education
       </a>
-      <a mat-list-item routerLink="/faq">
+      <a mat-list-item (click)="drawer.close()" routerLink="/faq">
         <mat-icon class="icon">question_answer</mat-icon>
         FAQ
       </a>
-      <a mat-list-item routerLink="/rate-calculator">
+      <a mat-list-item (click)="drawer.close()" routerLink="/rate-calculator">
         <mat-icon class="icon">assessment</mat-icon>
         Rate Calculator
       </a>
@@ -79,7 +79,7 @@
     <mat-expansion-panel class="alert-panel">
       <mat-expansion-panel-header>
         <mat-panel-title style="padding-top: 15px;">
-          <span matBadge="1">
+          <span matBadge="1" matBadgeColor="warn">
             <mat-icon>notification_important</mat-icon>
           </span>
           <span id="utility-alerts">Utility Alerts</span>
