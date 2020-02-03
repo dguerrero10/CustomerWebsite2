@@ -1,4 +1,19 @@
-.header {
+
+.flex-grid {
   display: flex;
-  justify-content: start;
+  margin: 25px;
+
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+
+img {
+  border-radius: 5px;
 }

@@ -89,7 +89,5 @@ export class FaqService {
 
   constructor() { }
 
-  get articles() {
-    return [...this._articles];
-  }
+  get articles() { return [...this._articles]; }
 }

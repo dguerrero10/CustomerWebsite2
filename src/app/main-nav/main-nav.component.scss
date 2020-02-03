@@ -22,6 +22,7 @@
   justify-content: space-between;
   background: #11293e;
   color: white;
+  border-bottom: 1px solid #ededed;
 }
 
 .nav-list {
@@ -33,13 +34,9 @@
   padding-bottom: 5px;
 }
 
-.spacer {
-  flex: 1 1 auto;
-}
-
 .nav-list-item {
   display: inline;
-  padding: 2rem;
+  padding: 1rem;
   color: white;
 }
 
@@ -51,9 +48,8 @@
 
 .alert-panel {
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-  background: whitesmoke;
+  background:linear-gradient(141deg, rgb(245, 244, 244) 25%, rgb(245, 244, 244) 40%, rgb(252, 249, 249) 55%);
 }
-
 #utility-alerts {
   padding-left: 15px;
 }

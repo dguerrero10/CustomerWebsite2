@@ -1,0 +1,191 @@
+.page-header-background {
+  overflow: hidden;
+  margin-top: 10px
+}
+
+.page-header-section {
+  text-align: center;
+  height: 700px;
+  position: relative;
+}
+
+.download-btn {
+  border: 2px solid white;
+  margin-top: 2%;
+  padding: 15px;
+  width: 400px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  letter-spacing: 1px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.span {
+  margin: auto;
+  color: #11293e;
+  font-size: 2.2em;
+  font-weight: lighter;
+}
+#background-img {
+  background-image: url('../../../assets/images/woman_cellphone.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000000,#1a1919);
+        opacity: .6;
+  }
+}
+
+.card-container {
+  background:linear-gradient(141deg, rgb(245, 244, 244) 25%, rgb(245, 244, 244) 40%, rgb(252, 249, 249) 55%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 25px;
+}
+
+.card {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.tool-bar {
+  min-height: 125px;
+  border-bottom: 1px solid #ededed;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  height: 300px;
+}
+
+.card-p {
+  text-align: center;
+  font-size: 1.3em;
+  color: #7F7F87;
+}
+
+.card-content {
+  min-height: 50px;
+}
+
+.learn-btn {
+  width: 100%;
+  background:#11293e;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.app-container {
+  min-height: 300px;
+  display: flex;
+  align-items:center;
+}
+
+.app-headline {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+.app-sub-headline {
+  margin-bottom: 15px;
+  width: 50%;
+  text-align: center;
+  color: #7F7F87;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-app {
+  -webkit-filter: drop-shadow(0 0 0.85rem lightgray);
+  filter: drop-shadow(0 0 0.85rem lightgray);
+}
+
+@media screen and (max-width: 864px) {
+  .download-btn {
+    padding: 5px;
+    width: 200px;
+    font-size: normal;
+  }
+  .card-img {
+    height: 150px;
+  }
+  .app-sub-headline {
+    margin: 15px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-header-section {
+    text-align: center;
+    height: 300px;
+  }
+
+  .app-headline {
+    font-size: 35px;
+  }
+
+  .span {
+    margin: auto;
+    color: #11293e;
+    font-size: 35px;
+  }
+
+  .center-text {
+    font-size: 10vw !important;
+  }
+
+}

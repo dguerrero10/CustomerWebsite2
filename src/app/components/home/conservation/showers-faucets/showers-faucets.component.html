@@ -1,0 +1,10 @@
+<div class="flex-grid">
+  <div class="col" id="col-1">
+    <div class="mat-display-2 header">Conservation Tips</div>
+    <div class="mat-display-1" style="margin-bottom: 25px;">Showers and Faucets</div>
+    <div *ngFor="let article of loadedArticles">
+      <div class="mat-title header">{{article.title}}</div>
+      <p>{{article.content}}</p>
+    </div>
+  </div>
+</div>
