@@ -8,6 +8,7 @@ import { RateCalculatorComponent } from './home/rate-calculator/rate-calculator.
 import { EducationComponent } from './home/education/education.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'conservation', component: ConservationComponent },
   { path: 'faq', component: FaqComponent },
@@ -16,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class HomeRoutingModule { }
