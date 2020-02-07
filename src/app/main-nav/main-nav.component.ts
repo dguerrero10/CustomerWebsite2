@@ -16,6 +16,9 @@ export class MainNavComponent {
       shareReplay()
     );
 
+    utilityReport = `There is a scheduled outage on March 5th.
+    Please visit the Outages section in the Customer Portal or the My Utilites App to find out more details.`;
+
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }
