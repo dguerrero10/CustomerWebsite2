@@ -15,13 +15,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
+import { ConservationModule } from './components/home/conservation/conservation.module';
+import { EducationModule } from './components/home/education/education.module';
+import { FAQModule } from './components/home/faq/faq.module';
+import { RateCalculatorModule } from './components/home/rate-calculator/rate-calculator.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    MainNavComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,10 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MaterialModule,
     HomeModule,
+    ConservationModule,
+    EducationModule,
+    FAQModule,
+    RateCalculatorModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,

@@ -59,8 +59,33 @@
   }
 }
 
+.content-container {
+  display: flex;
+  padding: 25px 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 {
+  margin: 8% 0;
+  flex-direction: column;
+  padding-right: 55px;
+  flex: 1;
+}
+
+.col-2 {
+  margin: 8% 0;
+  flex-direction: column;
+  padding-left: 55px;
+  flex: 1;
+}
+
+.chart-card {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
 .card-container {
-  background:linear-gradient(141deg, rgb(245, 244, 244) 25%, rgb(245, 244, 244) 40%, rgb(252, 249, 249) 55%);
+  background: linear-gradient(141deg, rgb(245, 244, 244) 25%, rgb(245, 244, 244) 40%, rgb(252, 249, 249) 55%);
   min-height: 600px;
   display: flex;
   align-items: center;

@@ -92,30 +92,41 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
-// .fadeInUp {
-//   -webkit-animation-name: fadeInUp;
-//   animation-name: fadeInUp;
-//   -webkit-animation-duration: 1s;
-//   animation-duration: 1s;
-//   -webkit-animation-fill-mode: both;
-//   animation-fill-mode: both;
-// }
+@keyframes fadeInUp {
+  from {
+      transform: translate(0, 50px);
+  }
 
-// @-webkit-keyframes fadeInUp {
-//   from {
-//     opacity: 0;
-//     -webkit-transform: translate3d(0, 100%, 0);
-//     transform: translate3d(0, 100%, 0);
-//   }
+  to {
+      transform: translate(0,0);
+      opacity: 1
+  }
+}
 
-//   to {
-//     opacity: 1;
-//     -webkit-transform: translate3d(0, 0, 0);
-//     transform: translate3d(0, 0, 0);
-//   }
-// }
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate(0,50px)
+  }
 
-// .fadeInUp {
-//   -webkit-animation-name: fadeInUp;
-//   animation-name: fadeInUp;
-// }
+  to {
+      transform: translate(0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
