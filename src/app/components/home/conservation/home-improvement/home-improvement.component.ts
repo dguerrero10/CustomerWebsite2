@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../../conservation-education-shared/article.model';
-import { HomeArticleService } from '../../conservation-education-shared/home-article.service';
+import { ConservationHomeArticleService } from '../../conservation-education-shared/conservation-home-article.service';
 
 @Component({
   selector: 'app-home-improvement',
@@ -11,7 +11,7 @@ export class HomeImprovementComponent implements OnInit {
   loadedArticles: Article[];
   imgUrl = '../../../../../assets/images/conservation-home-improvement.jpeg';
 
-  constructor(private homeService: HomeArticleService) { }
+  constructor(private homeService: ConservationHomeArticleService) { }
 
   ngOnInit() {
     this.loadedArticles = this.homeService.articles;

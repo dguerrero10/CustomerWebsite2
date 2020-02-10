@@ -24,7 +24,7 @@ import { RateCalculatorModule } from './components/home/rate-calculator/rate-cal
   declarations: [
     AppComponent,
     FooterComponent,
-    MainNavComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,

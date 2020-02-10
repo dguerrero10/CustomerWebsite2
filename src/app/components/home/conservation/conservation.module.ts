@@ -7,19 +7,19 @@ import { MajorAppliancesComponent } from './major-appliances/major-appliances.co
 import { ShowersFaucetsComponent } from './showers-faucets/showers-faucets.component';
 import { ConservationRoutingModule } from './conservation-routing.module';
 import { MaterialModule } from 'src/app/material/material.module';
-import { SocialMediaComponent } from 'src/app/social-media/social-media.component';
+import { SharedModule } from '../conservation-education-shared/shared.module';
 
 @NgModule({
 declarations: [
   ConservationComponent,
   HomeImprovementComponent,
   MajorAppliancesComponent,
-  ShowersFaucetsComponent,
-  SocialMediaComponent
+  ShowersFaucetsComponent
 ],
 imports: [
   CommonModule,
   MaterialModule,
+  SharedModule,
   ConservationRoutingModule
 ]
 })

@@ -4,7 +4,7 @@ import { Article } from './article.model';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeArticleService {
+export class ConservationHomeArticleService {
   public _articles: Article[] = [
 
     new Article(
