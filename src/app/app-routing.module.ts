@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'rate-calculator',
     loadChildren: () => import('./components/home/rate-calculator/rate-calculator.module').then(m => m.RateCalculatorModule)
   },
+  {
+    path: 'announcements',
+    loadChildren: () => import('./components/home/announcements/announcements.module').then(m => m.AnnouncementsModule)
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 

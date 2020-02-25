@@ -10,11 +10,6 @@ import { MaterialModule } from './material/material.module';
 import { HomeModule } from './components/home.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { ConservationModule } from './components/home/conservation/conservation.module';
 import { EducationModule } from './components/home/education/education.module';
 import { FAQModule } from './components/home/faq/faq.module';
@@ -28,7 +23,6 @@ import { RateCalculatorModule } from './components/home/rate-calculator/rate-cal
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     HomeModule,
@@ -36,11 +30,7 @@ import { RateCalculatorModule } from './components/home/rate-calculator/rate-cal
     EducationModule,
     FAQModule,
     RateCalculatorModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    AppRoutingModule
   ],
   providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy} ],
   bootstrap: [AppComponent]

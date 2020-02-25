@@ -14,6 +14,10 @@ import { MatToolbarModule,
          MatNativeDateModule,
          MatSnackBarModule,
          MatTreeModule,
+         MatListModule,
+         MatButtonToggleModule,
+         MatMenuModule,
+         MatProgressBarModule
         } from '@angular/material';
 
 import { MatBadgeModule } from '@angular/material/badge';
@@ -34,7 +38,11 @@ const MaterialComponents = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatSnackBarModule,
-  MatTreeModule
+  MatTreeModule,
+  MatListModule,
+  MatButtonToggleModule,
+  MatMenuModule,
+  MatProgressBarModule
 ];
 
 @NgModule({

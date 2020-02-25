@@ -4,7 +4,7 @@
     <div class="mat-display-4 center-text">
       My Utilities App
       <div style="display: flex; justify-content: center;">
-        <a href="http://customerportal.myutility.services/#/account-number" target="_blank" class="portal-link">
+        <a href="http://customerportal.myutility.services/#/sign-up" target="_blank" class="portal-link">
           <button class="download-btn" mat-stroked-button>Sign Up Now</button>
         </a>
       </div>
@@ -18,8 +18,8 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="card-container">
-  <div class='row'>
-    <div class='column'>
+  <div class="row">
+    <div class="column">
       <mat-card class="card">
         <mat-card-header class="card-header">
           <mat-card-title class="card-title">
@@ -30,7 +30,7 @@
         <mat-card-content class="card-content">
           <p class="card-p">
             Fresh drinking water is a precious resource. Find ways to preserve water and
-            safeguard our environment here.
+            safeguard our environment here. Learn more in our Conservation section.
           </p>
         </mat-card-content>
         <mat-card-actions>
@@ -38,8 +38,8 @@
         </mat-card-actions>
       </mat-card>
     </div>
-
-    <div class='column'>
+    <div class="break"></div>
+    <div class="column">
       <mat-card class="card">
         <mat-card-header class="card-header">
           <mat-card-title class="card-title"><a routerLink="/education" class="card-link">Education</a>
@@ -49,7 +49,7 @@
         <mat-card-content class="card-content">
           <p class="card-p">
             Is your water bill higher than you expected? Want to know how to read your meter?
-            Discover answers to these questions and more here.
+            Discover answers to these questions and more in our Education section.
           </p>
         </mat-card-content>
         <mat-card-actions>
@@ -57,8 +57,8 @@
         </mat-card-actions>
       </mat-card>
     </div>
-
-    <div class='column'>
+    <div class="break"></div>
+    <div class="column">
       <mat-card class="card">
         <mat-card-header class="card-header">
           <mat-card-title class="card-title"><a routerLink="/rate-calculator" class="card-link">Rate Calculator</a>
@@ -67,7 +67,8 @@
         <img class="card-img" mat-card-image src="../../../assets/images/MUS_Calculator.svg" alt="Photo of Calculator">
         <mat-card-content class="card-content">
           <p class="card-p">
-            Need help calculating your rates? Use our Rate Calculator.
+            Need help calculating your rates? Use our Rate Calculator and
+            get a good idea of what your rates will be based on your usage.
             Never let your rates surprise you.
           </p>
         </mat-card-content>
@@ -76,9 +77,60 @@
         </mat-card-actions>
       </mat-card>
     </div>
-
   </div>
 </div>
+
+<div class="announcement-container">
+  <div class="row-img">
+    <div class="column" style="padding: 0;">
+      <div class="page-header-background" style="margin-top: 0;">
+        <div class="page-header-section animated animatedFadeInUp fadeInUp outage-header-section">
+          <div id="planned-outage-img"></div>
+          <div class="mat-display-3 center-text">
+            Planned Outage
+            <div style="display: flex; justify-content: center;">
+              <a routerLink="/announcements/planned-outage" style="color:white;">
+                <button class="download-btn" mat-stroked-button>View Report</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column" style="padding: 0;">
+      <div class="page-header-background" style="margin-top: 0;">
+        <div class="page-header-section animated animatedFadeInUp fadeInUp outage-header-section">
+          <div id="board-meeting-img"></div>
+          <div class="mat-display-3 center-text">
+            Board Meeting
+            <div style="display: flex; justify-content: center;">
+              <a routerLink="/announcements/board-meeting" style="color:white;">
+                <button class="download-btn" mat-stroked-button>View Report</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<mat-toolbar>
+  <mat-toolbar-row class="tool-bar">
+    <a routerLink="/announcements" class="span">
+      <span>
+        <button mat-raised-button class="view-all-btn">
+          All Announcements
+          <i class="material-icons">
+            chevron_right
+          </i>
+        </button>
+      </span>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
 <div class="mat-display-2 app-headline">
   Get the My Utilities App
 </div>
@@ -92,5 +144,5 @@
     Includes features like: Bill Pay, Outage Reporting, Education and Conservation information, Rate Calculator, Past
     Usage, and so much more. Download the MyUtilities App Now!
   </div>
-
 </div>
+

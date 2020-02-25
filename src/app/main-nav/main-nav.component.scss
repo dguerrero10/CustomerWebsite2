@@ -46,9 +46,14 @@
   padding: 0;
 }
 
+.drop-down-item {
+  color: #11293e;
+  font-size: 1.2em;
+}
+
 .alert-panel {
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-  background:linear-gradient(141deg, rgb(245, 244, 244) 25%, rgb(245, 244, 244) 40%, rgb(252, 249, 249) 55%);
+  background: white;
 }
 #utility-alerts {
   padding-left: 15px;
@@ -57,7 +62,6 @@
 
 button, mat-nav-list a {
   text-transform: uppercase;
-  // font-weight: lighter;
   font-size: 0.8em;
   letter-spacing: 1px;
   color: white;
