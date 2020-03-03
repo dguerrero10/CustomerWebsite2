@@ -5,7 +5,7 @@ import { Article } from './article.model';
   providedIn: 'root'
 })
 export class ConservationApplianceArticleService {
-  private _article: Article[] = [
+  private _articles: Article[] = [
     new Article(
       'Dishwasher Use',
       `Washing dishes by hand typically uses more water than using a dishwasher.
@@ -25,6 +25,5 @@ export class ConservationApplianceArticleService {
 
   constructor() {}
 
-  get articles() { return [...this._article]; }
-
+  get articles() { return [...this._articles]; }
 }

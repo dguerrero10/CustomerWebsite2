@@ -8,13 +8,19 @@ import { ShowersFaucetsComponent } from './showers-faucets/showers-faucets.compo
 import { ConservationRoutingModule } from './conservation-routing.module';
 import { MaterialModule } from 'src/app/material/material.module';
 import { SharedModule } from '../conservation-education-shared/shared.module';
+import { MajorWaterApplicationsComponent } from './major-water-applications/major-water-applications.component';
+import { WaterFriendlyLandscapingComponent } from './water-friendly-landscaping/water-friendly-landscaping.component';
+import { KitchenBathroomComponent } from './kitchen-bathroom/kitchen-bathroom.component';
 
 @NgModule({
 declarations: [
   ConservationComponent,
   HomeImprovementComponent,
   MajorAppliancesComponent,
-  ShowersFaucetsComponent
+  ShowersFaucetsComponent,
+  MajorWaterApplicationsComponent,
+  WaterFriendlyLandscapingComponent,
+  KitchenBathroomComponent
 ],
 imports: [
   CommonModule,

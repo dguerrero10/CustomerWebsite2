@@ -57,7 +57,7 @@
         <a routerLink="/education" class="nav-list-item">
           <button mat-button>
             <mat-icon class="icon">school</mat-icon>
-            Educations
+            Education
           </button>
         </a>
         <button mat-button [matMenuTriggerFor]="menu">
@@ -102,6 +102,10 @@
       </mat-expansion-panel-header>
       <p>{{utilityReport}}</p>
     </mat-expansion-panel>
+    <mat-progress-bar *ngIf="loading"
+                      style="padding: 3px; margin-top: -3px"
+                      mode="indeterminate">
+    </mat-progress-bar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
