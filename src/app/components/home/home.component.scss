@@ -35,7 +35,7 @@
 .span {
   margin: auto;
   color: #11293e;
-  font-size: 2.2em;
+  font-size: 1.5em;
 }
 
 #background-img {
@@ -228,6 +228,7 @@
   width: 50%;
   text-align: center;
   color: #7F7F87;
+  font-weight: lighter;
 }
 
 .container {
@@ -239,6 +240,15 @@
 .img-app {
   -webkit-filter: drop-shadow(0 0 0.85rem lightgray);
   filter: drop-shadow(0 0 0.85rem lightgray);
+}
+
+.app-badge {
+  width: 205px;
+  height: 100px;
+}
+
+#google-badge {
+  width: 250px;
 }
 
 @media screen and (min-width: 865px) and (max-width: 1300px) {
@@ -296,7 +306,7 @@
   }
 
   .app-headline {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .span {
@@ -307,6 +317,19 @@
   .center-text {
     font-size: 10vw !important;
   }
+
+  .app-badge {
+    width: 150px;
+    height: 50px;
+  }
+  
+  #google-badge {
+    width: 175px;
+    height: 75px;
+    margin-top: -12px;
+    margin-right: -5px;
+  }
+  
 }
 
 @media screen and (max-width: 340px) {

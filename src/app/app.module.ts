@@ -32,7 +32,8 @@ import { RateCalculatorModule } from './components/home/rate-calculator/rate-cal
     RateCalculatorModule,
     AppRoutingModule
   ],
-  providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy} ],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

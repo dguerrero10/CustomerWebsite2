@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     MaterialModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ]
 })
 export class HomeModule { }

@@ -24,16 +24,16 @@ export class FaqService {
       'What is a CCF?',
       `CCF is a measurement of liquid, it represents 100 cubic feet. You may also see it written as HCF.
       Each cubic foot of water equals 7.48 gallons, therefore one CCF is 748 gallons.
-      Our water charge is $2.585 per CCF which calculates at $2.585 for each 748 gallons of water used.`
+      Our water charge is $X.XX per CCF which calculates at $X.XX for each 748 gallons of water used.`
     ),
     new FAQ(
-      'What do I own and what is owned by EPWC?',
+      'What do I own and what is owned by My Utilities',
       `The customer owns all water pipes and fixtures from the water meter to their home.
-      Any pipes or equipment from the meter to the water main is the responsibility of EPWC, including the meter box and cover.`
+      Any pipes or equipment from the meter to the water main is the responsibility of My Utilities, including the meter box and cover.`
     ),
     new FAQ(
       'Can I pay my bill by credit card?',
-      `No, we do not accept credit cards.`
+      `Yes, you can pay using either a credit card or debit card. This can be done in just a few easy steps through the Customer Portal or by downloading the “My Utilities App” and visiting the “Pay My Bill” section. `
     ),
     new FAQ(
       'Can I make a payment by phone?',
@@ -65,7 +65,7 @@ export class FaqService {
     new FAQ(
       'What should I do to dispute a bill?',
       `If you question the amount of your bill, you should ask for an explanation in person or by telephone from the customer service representative.
-      A representative will review your situation and take necessary action. If you are not satisfied with the explanation from EPWC and wish to register
+      A representative will review your situation and take necessary action. If you are not satisfied with the explanation from My Utility Services and wish to register
       a complaint (prior to receiving a shut-off notice) or request an investigation, you must deposit the amount of your bill with:
 
       California Public Utilities Commission (CPUC)
